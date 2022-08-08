@@ -4,6 +4,7 @@
     margin: 0; 
 }
 main{
+    background-color:  rgb(180, 211, 253) ;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -11,7 +12,94 @@ main{
     align-items: center;
 }
 #tablero{
+    border: 6px solid #f1c40f ;
     width: 600px;
     height: 600px;
-    background-color: aquamarine;
+  
+}
+#tablero{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);  
+    grid-template-areas:"bart  homero  lisa maggie  marge perro "
+                        "gorgory  center center center center pattyselma "
+                        "carl    center center center center homeromalo "
+                        "lenny     center center center center moe"
+                        "bart2 homero2 burns krusty milhouse nedflanders" ;
+}
+
+section > div{   
+    background-color: rgb(156, 196, 248)  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 80%;
+    height: 80%;
+    border: 5px dotted rgb(190, 81, 172);
+}
+.imagen{
+    grid-area: center;   
+}
+.imagen1{
+    grid-area: bart;   
+}
+
+.imagen2{
+    grid-area: homero; 
+}
+.imagen3{
+    grid-area: lisa;
+}
+
+.imagen4{
+    grid-area: maggie;
+}
+.imagen5{
+    grid-area: marge;
+}
+.imagen6{
+    grid-area: perro;
+}
+.imagen7{
+    grid-area: bart2;
+}
+.imagen8{
+    grid-area: homero2;
+} 
+.imagen9{
+    grid-area: burns;
+} 
+.imagen10{
+    grid-area: krusty;
+}
+.imagen11{
+    grid-area: milhouse;
+}
+.imagen12{
+    grid-area: nedflanders;
+}
+.imagen13{
+    grid-area: gorgory;
+}
+.imagen14{
+    grid-area: carl;
+}
+.imagen15{
+    grid-area: lenny;
+}
+.imagen16{
+    grid-area: pattyselma;
+}
+.imagen17{
+    grid-area: homeromalo;
+}
+.imagen18{
+    grid-area: moe;
+}
+section :hover{
+  cursor: pointer;
+  border: 1px solid #f1c40f;
+  transform: scale(1.3);
 }
