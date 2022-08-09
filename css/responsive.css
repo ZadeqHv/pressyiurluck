@@ -1,0 +1,20 @@
+ section > div{   
+        background-color: rgb(213, 248, 156)  ;}
+    .imagen5{
+        display: none ;
+    }  
+    .imagen11{
+        display: none ;
+    } 
+    #tablero{
+        border: 6px solid rgb(156, 196, 248);
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);  
+        grid-template-areas:"bart  homero  lisa maggie  perro "
+                            "gorgory  center center center pattyselma "
+                            "carl  center center  center homeromalo "
+                            "lenny  center center  center moe"
+                            "bart2 homero2 burns krusty nedflanders" ;
+    } 
+ 
